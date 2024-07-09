@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    position: relative;
+    position: right;
 }
 
 body::before {
@@ -22,8 +22,8 @@ body::before {
 
 header {
     background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    text-align: left;
 }
 
 header h1 {
@@ -47,10 +47,10 @@ li {
 }
 
 li a {
-    display: block;
+    display: flex;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
 }
 
@@ -60,4 +60,16 @@ li a:hover {
 
 main {
     padding: 20px;
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-image img {
+    max-width: 100%;
+    /* Image won't be wider than its container */
+    height: auto;
 }
